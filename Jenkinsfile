@@ -10,9 +10,10 @@ stage('Checkout') {
 }
 stage('Build and Test') {
     echo "${a}"
+   env.var1 = "variable had been globalized successfully"
 }
 stage('Generate Report') {
-    
+    echo "${env.var1}"
 }
 
 }

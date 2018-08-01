@@ -9,7 +9,7 @@ stage('Checkout') {
     echo "${a}"
 }
 stage('Build and Test') {
- 
+    echo "${a}"
 }
 stage('Generate Report') {
     

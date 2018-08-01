@@ -15,5 +15,8 @@ stage('Build and Test') {
 stage('Generate Report') {
     echo "${env.var1}"
 }
+    stage('Notification stage'){
+        slackSend baseUrl: 'https://devopsdemoworkspace.slack.com/', channel: 'devops_training', message: 'Hi this is the first notification', teamDomain: 'devopsdemoworkspace.slack.com', token: '1zjBfLfJ9KPbwQNHk9Ivi3Ze'
+    }
 
 }

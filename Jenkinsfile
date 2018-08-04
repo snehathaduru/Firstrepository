@@ -2,7 +2,7 @@ node('master'){
     
 
 stage('Checkout') {
-    //git 'https://github.com/snehathaduru/Firstrepository.git'
+    git 'https://github.com/snehathaduru/Firstrepository.git'
 }
 stage('Build and Test') {
  sh 'ls -ltr'
